@@ -101,7 +101,7 @@ describe('Power', function () {
             .end(function (err, res) {
                 expect(res.body).to.eql({ result: 8 });
                 done();
-            });
+        });
     });
     it('raises a positive integer to the power of zero', function (done) {
         request.get('/arithmetic?operation=power&operand1=5&operand2=0')
